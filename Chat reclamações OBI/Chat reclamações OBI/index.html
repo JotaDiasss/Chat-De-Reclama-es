@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+    <button id="show-modal-button" onclick="showmodal()">Reclame Aqui</button>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span onclick="hidemodal()">&times;</span>
+            <div class="header-container">
+              <img src="iconobi.webp" alt="Ícone de Usuário" class="user-icon">
+              <h2>Reclamações</h2>
+            </div>
+            <div id="complaint-chat" class="chat-container">
+            </div>
+            <div class="user-input-container">
+                <input type="text" id="user-input" placeholder="Digite sua reclamação">
+                <button id="send-button">Enviar</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
